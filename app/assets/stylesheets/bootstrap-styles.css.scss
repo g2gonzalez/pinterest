@@ -1,8 +1,22 @@
-$navbar-default-bg: #a112a6;
-$navbar-default-link-color: #bdc3c7; //#ecf0f1;
-$navbar-default-link-hover-color: white;
-$navbar-default-brand-hover-color: white;
-$body-bg: #f6f8f8;
-$jumbotron-bg: #bdc3c7;
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+
+$navbar-default-bg: white;
+$navbar-default-brand-color: #22A7F0;
+$navbar-default-link-color: #ABB7B7; //#ecf0f1;
+$navbar-default-link-hover-color: #22a7f0;
+$navbar-default-brand-hover-color: #ABB7B7;
+$body-bg: #ecf0f1;
+$jumbotron-bg: white;
+
+.center{
+	text-align: center;
+}
+.navbar-header .navbar-brand{
+	font-family: 'Lobster', cursive;
+	font-size: 28px;
+}
+.nav .nav-links{
+	font-size: 16px;
+}
 
 @import 'bootstrap';
