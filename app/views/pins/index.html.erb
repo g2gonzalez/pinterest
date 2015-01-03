@@ -1,0 +1,30 @@
+<div class="jumbotron">
+	<h1>My pins</h1>
+	
+	<div class="table-responsive">
+		<table class="table table-striped">
+		  <thead>
+			 <tr>
+				<th>Description</th>
+				<th colspan="3"></th>
+			 </tr>
+		  </thead>
+
+		  <tbody>
+			 <% @pins.each do |pin| %>
+				<tr>
+				  <td><%= pin.description %></td>
+				  <td><%= link_to 'View', pin %></td>
+				  <td><%= link_to 'Update', edit_pin_path(pin) %></td>
+				  <td><%= link_to 'Delete', pin, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+				</tr>
+			 <% end %>
+		  </tbody>
+		</table>
+	</div>
+	
+	<br>
+
+	<%= link_to 'New Pin', new_pin_path %>
+	
+</div>
