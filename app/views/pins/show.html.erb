@@ -4,6 +4,7 @@
 	<p>
 	  <strong>Description:</strong>
 	  <%= @pin.description %>
+	  <h5>User: <%= @pin.user.name %></h5>
 	</p>
 
 	<%= link_to 'Update', edit_pin_path(@pin) %> |
