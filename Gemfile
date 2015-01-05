@@ -12,6 +12,8 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'bootstrap-sass', '~> 3.3.1'
 # Use Devise for user accounts
 gem 'devise', '~> 3.4.1'
+# Use Paperclip for uploading images
+gem "paperclip", github: "thoughtbot/paperclip"
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
