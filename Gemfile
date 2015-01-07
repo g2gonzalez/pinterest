@@ -14,6 +14,8 @@ gem 'bootstrap-sass', '~> 3.3.1'
 gem 'devise', '~> 3.4.1'
 # Use Paperclip for uploading images
 gem "paperclip", github: "thoughtbot/paperclip"
+# Use Amazon for storing images in Live environment
+gem "aws-sdk", "~> 1.60.2"
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
