@@ -1,5 +1,5 @@
-<div class="jumbotron">
-	<h1>My pins</h1>
+<div class="jumbotron j-shadow">
+	<h1 class="pin-header">My pins</h1>
 	
 	<div class="table-responsive">
 		<table class="table table-striped">
@@ -7,7 +7,6 @@
 				<tr>
 					<th>Image</th>
 					<th>Description</th>
-					<th>User</th>
 			 	</tr>
 		  </thead>
 
@@ -16,10 +15,9 @@
 			 	<tr>
 					<td><%= image_tag pin.image.url(:thumb) %></td>
 					<td><%= pin.description %></td>
-					<td><%= pin.user.name if pin.user %></td>
 					<td><%= link_to 'View', pin_path(pin) %></td>
 					<% if pin.user == current_user %>
-				  		<td><%= link_to 'Update', edit_pin_path(pin) %></td>
+				  		<td><%= link_to 'Edit', edit_pin_path(pin) %></td>
 				  		<td><%= link_to 'Delete', pin, method: :delete, data: { confirm: 'Are you sure?' } %></td>
 					<% end %>
 				</tr>
@@ -28,8 +26,6 @@
 		</table>
 	</div>
 	
-	<br>
-
-	<%= link_to 'New Pin', new_pin_path %>
+	<%= link_to 'New Pin', new_pin_path, class:"btn-margin btn btn-primary" %>
 	
 </div>

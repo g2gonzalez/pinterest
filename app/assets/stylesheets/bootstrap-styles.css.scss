@@ -5,7 +5,7 @@ $navbar-default-brand-color: #22A7F0;
 $navbar-default-link-color: #95A5A6; //#ecf0f1;
 $navbar-default-link-hover-color: #22a7f0;
 $navbar-default-brand-hover-color: #ABB7B7;
-$body-bg: #ecf0f1;
+$body-bg: #DCE0E0; //#ecf0f1;
 $jumbotron-bg: white;
 
 .center{
@@ -24,5 +24,64 @@ $jumbotron-bg: white;
 .label-gray{
 	color: #6C7A89;
 }
+.pin-header{
+	padding-top: 0;
+	margin-top: -10px;
+	margin-bottom: 25px;
+}
+.btn-margin{
+	margin-top: 15px;
+}
+.j-shadow{
+	box-shadow: 7px 12px 10px #888888;
+}
+.em-color{
+	color: #22A7F0;
+}
+blockquote{
+	border-left: #22A7F0;
+}
+.stocked-by{
+	font-size: 14px;
+}
+
+#pin_show {
+	margin-top: 30px;
+	.panel{
+		box-shadow: 7px 12px 10px #888888;
+	}
+	.panel-heading {
+		padding: 0;
+	}
+	.pin_image {
+		img {
+			max-width: 100%;
+			width: 100%;
+			display: block;
+			margin: 0 auto;
+		}
+	}
+	.panel-body {
+		padding: 35px;
+		h1 {
+			margin: 0 0 10px 0;
+		}
+		.description {
+			color: #868686;
+			line-height: 1.75;
+			margin: 0;
+		}
+	}
+	.panel-footer {
+		padding: 20px 35px;
+		p {
+			margin: 0;
+		}
+		.user {
+			padding-top: 8px;
+		}
+	}
+}
+
 
 @import 'bootstrap';

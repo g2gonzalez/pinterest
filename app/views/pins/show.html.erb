@@ -1,14 +1,28 @@
-<div class="jumbotron">
-	
-	<%= image_tag @pin.image.url(:medium) %>
-
-	<p>
-	  <strong>Description:</strong>
-	  <%= @pin.description %>
-	  <h5>User: <%= @pin.user.name %></h5>
-	</p>
-
-	<%= link_to 'Update', edit_pin_path(@pin) %> |
-	<%= link_to 'Back', pins_path %>
-	
+<div id="pin_show" class="row">
+	<div class="col-md-4 col-md-offset-4">
+		<div class="panel panel-default">
+			<div class="panel-heading pin_image">
+				<%= image_tag @pin.image.url %>
+			</div>
+			<div class="panel-body">
+				<p>
+					<strong>Description:</strong>
+					<%= @pin.description %>
+				</p>
+			</div>
+			<div class="panel-footer">
+				<div class="row">
+					<div class="col-md-6">
+						<p>Stocked by: <strong><%= @pin.user.name %></strong></p>
+					</div>
+					<div class="col-md-6">
+						<div class="pull-right">
+							<%= link_to 'Edit', edit_pin_path(@pin), class:"btn btn-danger btn-sm" %>
+							<%= link_to 'Back', pins_path, class:"btn btn-primary btn-sm" %>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+   </div>
 </div>
