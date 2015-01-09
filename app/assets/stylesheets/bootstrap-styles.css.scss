@@ -1,5 +1,3 @@
-@import "bootstrap-sprockets";
-@import 'bootstrap';
 @import url(https://fonts.googleapis.com/css?family=Lobster);
 
 $navbar-default-bg: white;
@@ -83,3 +81,4 @@ $jumbotron-bg: white;
 		}
 	}
 }
+@import 'bootstrap';
