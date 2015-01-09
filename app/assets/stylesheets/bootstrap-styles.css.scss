@@ -72,12 +72,45 @@ $jumbotron-bg: white;
 		}
 	}
 	.panel-footer {
-		padding: 20px 35px;
+		padding: 15px 10px 15px 35px;
 		p {
+			position: absolute;
+			margin-top: 5px;
+		}
+		pull-right {
+			margin-top: 5px;
+			margin-right: 5px;
+		}
+	}
+}
+#pin_edit {
+	.panel{
+		box-shadow: 7px 12px 10px #888888;
+	}
+	.pin_image {
+		img {
+			max-width: 100%;
+			width: 100%;
+			display: block;
+			margin: 0 auto;
+		}
+	}
+	.panel-body {
+		padding: 30px;
+		padding-bottom: 0px;
+		h1 {
+			margin: 0 0 10px 0;
+		}
+		.description {
+			color: #868686;
+			line-height: 1.75;
 			margin: 0;
 		}
-		.user {
-			padding-top: 8px;
+	}
+	.panel-footer {
+		padding: 0px 0px 15px 35px;
+		p {
+			margin: 0;
 		}
 	}
 }
